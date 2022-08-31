@@ -1,8 +1,9 @@
 ﻿// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
-using static System.Console; //эта команда позволяет не писать Console каждый раз в новой строке
-Clear();
+using static System.Console;    //эта команда позволяет не писать Console каждый раз в новой строке
+Clear();      //очищает терминал при каждом запуске программы
+
 WriteLine("Введите первое число: ");
-int num_A = int.Parse(Console.ReadLine());
+int num_A = int.Parse(Console.ReadLine());    //int.Parse преобразует строку (string) в int (если может).Convert.ToInt32 преобразует в int значение любого типа, из перечисленных здесь. boolean, double, float и т.д. А самое главное, может преобразовать экземпляр любого класса, реализующего IConvertible.
 
 WriteLine("Введите второе число: ");
 int num_B = int.Parse(Console.ReadLine());
